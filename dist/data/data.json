@@ -5,7 +5,7 @@
 
 {
   
-    "productImage": "images/K-Brew-and-Chill-Single-Serve-Coffee-Maker_5000380296_swatch.webp",
+    "productImage": "images/coffee1.jpg",
 
     "productName":"K-Brew + Chill™ Coffee Maker",
     "productPrice": "$99",
@@ -21,7 +21,7 @@
 
 {
   
-    "productImage": "../images/K-Duo-hot-and-iced-Single-Serve-Carafe-Coffee-Maker-Gen2_5000378536_swatch.webp",
+    "productImage": "images/coffee2.jpg",
 
     "productName":"K-Duo® Hot & Iced Single Serve & Carafe Coffee Maker (Gen 2)",
     "productPrice": "$99",
@@ -36,7 +36,7 @@
 
 {
   
-    "productImage": "../images/K50-Coffee-Maker_5000204441_swatch.webp",
+    "productImage": "images/coffee3.jpg",
 
     "productName":"Keurig® K-Classic® Coffee Maker",
     "productPrice": "$99",
@@ -51,7 +51,7 @@
 
 {
   
-    "productImage": "../images/K-Select-Coffee-Maker_5000359828_swatch.webp",
+    "productImage": "images/coffee4.jpg",
 
     "productName":"Keurig® K-Select® Coffee Maker",
     "productPrice": "$99",
@@ -68,7 +68,7 @@
 
 {
   
-    "productImage": "../images/K-Elite-Single-Serve-Coffee-Maker_5000359832_swatch.webp",
+    "productImage": "images/coffee5.jpg",
 
     "productName":"Keurig® K-Elite® Single Serve Coffee Maker",
     "productPrice": "$99",
@@ -82,7 +82,7 @@
 
 {
   
-    "productImage": "../images/K-Supreme-SMART-Coffee-Maker_5000367509_swatch.webp",
+    "productImage": "images/coffee6.png",
 
     "productName":"K-Supreme® SMART Single Serve Coffee Maker",
     "productPrice": "$99",
@@ -97,7 +97,7 @@
 
 {
   
-    "productImage": "../images/K-Supreme-Plus-SMART-Coffee-Maker_5000365542_swatch.webp",
+    "productImage": "images/coffee7.png",
 
     "productName":"K-Supreme Plus® SMART Single Serve Coffee Maker",
     "productPrice": "$99",
@@ -113,7 +113,7 @@
 
 {
   
-    "productImage": "../images/K-Duo-Single-Serve-Carafe-Coffee-Maker_5000204977_swatch.webp",
+    "productImage": "images/coffee8.png",
 
     "productName":"K-Duo® Single Serve & Carafe Coffee Maker",
     "productPrice": "$99",
@@ -127,7 +127,7 @@
 
 {
   
-    "productImage": "../images/K-Cafe-SMART-Coffee-Latte-Cappuccino-Maker_5000365485_swatch.webp",
+    "productImage": "images/coffee9.png",
 
     "productName":"K-Café® SMART Single Serve Coffee Maker",
     "productPrice": "$99",
@@ -141,7 +141,7 @@
 
 {
   
-    "productImage": "../images/K-Cafe-Special-Edition-Coffee-Latte-Cappuccino-Maker_5000341465_swatch.webp",
+    "productImage": "images/coffee10.png",
 
     "productName":"K-Café® Special Edition Single Serve Coffee Latte & Cappuccino Maker",
     "productPrice": "$99",

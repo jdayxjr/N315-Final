@@ -488,4 +488,16 @@ h1, h2, h3, h4, h5, h6, p {
 .sale-banner {
   height: 60px;
   background-color: rgb(255, 196, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centers the text content */
+  position: relative; /* Ensures .close-btn-sales positions itself relative to this */
+  text-align: center;
+}
+
+.close-btn-sales {
+  position: absolute; /* Positions the button inside .sale-banner */
+  right: 10px; /* Moves the button 10px from the right edge */
+  top: 50%; /* Centers the button vertically within .sale-banner */
+  transform: translateY(-50%); /* Adjusts for perfect vertical alignment */
 }
