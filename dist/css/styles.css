@@ -230,7 +230,6 @@ h1, h2, h3, h4, h5, h6, p {
   background-color: #b71c1c;
 }
 
-/* Media Queries for responsiveness */
 @media (max-width: 768px) {
   .coffelist-container {
     gap: 20px;
