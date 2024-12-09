@@ -1,12 +1,12 @@
 
 import * as $ from "jquery";
 
-var products=[];
-var cart=[];
+var products = [];
+var cart = [];
 
 export function changePage(pageName) {
     if (pageName === "") {
-        return; 
+        return;
     }
 
     $.get(`pages/${pageName}.html`, function (data) {
@@ -17,12 +17,12 @@ export function changePage(pageName) {
             loadCartItems();
         }
     }).fail(function () {
-      //  console.error(`Failed to load page: ${pageName}`);
+        //  console.error(`Failed to load page: ${pageName}`);
     });
 
     if (products.length <= 0) {
         loadProducts();
-    } else{
+    } else {
         loadHomePage();
     }
 }
@@ -34,12 +34,12 @@ export function changePage(pageName) {
 
 
 function loadCartItems() {
-   
-    $(".cart-items").html(""); 
+
+    $(".cart-items").html("");
     $(".cart-itemsText").html("");
 
     if (cart.length > 0) {
-     
+
         $.each(cart, (index, productIndex) => {
             let product = products[productIndex];
             let cartHTML = `
@@ -65,10 +65,6 @@ function loadCartItems() {
                         <span class="dollar-sign">$</span>${product.productPriceThree}<span class="cents">${product.productPriceThreeCents}</span>
                     </span>
                 </div>
-                <div class="shipping-icon">
-                    <i class="fa-solid fa-truck-moving"></i>
-                    <div class="shipping-text">Free shipping</div>
-                </div>
                 <div class="compareboxContainer">
                     <div class="compare-box"></div>
                     <div class="compare-text">Compare</div>
@@ -78,19 +74,19 @@ function loadCartItems() {
                 </div>
             </div>`;
 
-            $(".cart-items").append(cartHTML); 
+            $(".cart-items").append(cartHTML);
         });
 
-       
+
         $(".remove").off("click").on("click", function () {
-            let index = $(this).attr("id"); 
-            cart.splice(index, 1); 
+            let index = $(this).attr("id");
+            cart.splice(index, 1);
             console.log("after removed", cart);
             loadCartItems();
-            $(".item-text").html(cart.length); 
+            $(".item-text").html(cart.length);
         });
     } else {
-       
+
         $(".cart-itemsText").html("You don't have any items in your shopping cart");
     }
 }
@@ -102,7 +98,7 @@ function loadCartItems() {
 
 
 function loadHomePage() {
-    $("#app").html(`<div class="coffelist-container"></div>`); 
+    $("#app").html(`<div class="coffelist-container"></div>`);
 
     $.each(products, (index, product) => {
         let productHTML = `
@@ -130,10 +126,6 @@ function loadHomePage() {
 
                 
             </div>
-            <div class="shipping-icon">
-                <i class="fa-solid fa-truck-moving"></i>
-                <div class="shipping-text">Free shipping</div>
-            </div>
             <div class="compareboxContainer">
                 <div class="compare-box"></div>
                 <div class="compare-text">Compare</div>
@@ -143,36 +135,36 @@ function loadHomePage() {
             </div>
         </div>`;
         //work on that
-        $(".coffelist-container").append(productHTML); 
+        $(".coffelist-container").append(productHTML);
     });
 
     addBuyNowListner();
 }
 
-function addBuyNowListner(){
-    $(".buy-now").on("click",function(){
-        let index=$(this).attr("id");
-cart.push(index);
-$(".item-text").html(cart.length);
-Swal.fire({
-    title: "Success!",
-    text: "The item has been added to your cart.",
-    icon: "success"
-});
+function addBuyNowListner() {
+    $(".buy-now").on("click", function () {
+        let index = $(this).attr("id");
+        cart.push(index);
+        $(".item-text").html(cart.length);
+        Swal.fire({
+            title: "Success!",
+            text: "The item has been added to your cart.",
+            icon: "success"
+        });
         console.log("buy now", index);
 
 
-         
-         $(this).off("click");
+
+        $(this).off("click");
     });
 }
 
 
 
-    function loadProducts(){
-        $.getJSON('data/data.json',(data)=> {
-            products = data.PRODCUTS
-            console.log(products);
-            loadHomePage();
-        })
-    }
+function loadProducts() {
+    $.getJSON('data/data.json', (data) => {
+        products = data.PRODCUTS
+        console.log(products);
+        loadHomePage();
+    })
+}
