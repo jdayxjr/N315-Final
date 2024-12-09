@@ -1,82 +1,73 @@
-footer{
-   
-width: 100%;
-margin: 20px;
+.footer {
+  background-color: #2c2c2c;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  padding: 40px 20px;
 }
 
-.footer-contactBox{
-
-    width: 95%;
-    background-color: rgb(44, 28, 8);
-display: flex;
-align-items: center;
-justify-content: space-between;
-height: 50px;
-padding: 18px;
-
-margin: auto;
-
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-
-.footerLocationBox{
-
-    width: 35%;
-    //background-color: orange;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
+.footer-section {
+  flex: 1 1 200px;
 }
 
-.gpsIcon{
-    font-size: 20px;
-    color: white;
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
 }
 
-.storeBox{
-    font-size: 14px;
-    letter-spacing: 1px;
-    color: white;
+.footer-section ul {
+  list-style: none;
+  padding: 0;
 }
 
-.smallcirleBox{
-    font-size: 3px;
-    color: white;
+.footer-section ul li {
+  margin-bottom: 10px;
 }
 
-.customersupportBox{
-    line-height: 20px;
-    font-size: 14px;
-    color: white;
+.footer-section ul li a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
-
-.socialcontainer{
-    width: 40%;
- //  background-color: orangered;
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding-left: 20%;
+.footer-section ul li a:hover {
+  text-decoration: underline;
 }
 
-
-
-.socailsIconBox{
-    width: 80%;
-   // background-color: indigo;
-    font-size: 18px;
-    color: white;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
+.social-icons {
+  display: flex;
+  gap: 10px;
 }
 
-.socialText{
-    color: white;
-    font-size: 14px;
+.social-icons .icon {
+  background-color: #444444;
+  border-radius: 50%;
+  display: inline-block;
+  height: 40px;
+  text-align: center;
+  width: 40px;
+}
 
+.social-icons .icon:hover {
+  background-color: #555555;
+}
+
+.social-icons .icon::after {
+  content: attr(class);
+  display: block;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 1px solid #444444;
+  padding-top: 10px;
 }
