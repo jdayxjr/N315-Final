@@ -1,0 +1,20 @@
+.cart-itemsText{
+width: 100%;
+    font-size: 45px;
+    letter-spacing: 5px;
+    line-height: 30px;
+    text-align: center;
+  padding: 30px;
+
+
+  
+}
+
+.cart-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 10px;
+}

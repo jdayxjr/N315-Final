@@ -1,0 +1,134 @@
+
+  .nav-wrapper {
+    background-color: #ece9e4;
+    height: 151px;
+   width: 100%;
+  }
+  
+  .nav-topbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+  .nav-top {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .logo-photo {
+    background-image: url("../images/Keurig_logo.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
+    width: 30%;
+    cursor: pointer;
+  }
+  
+  .search-container {
+    position: relative;
+    width: 800px;
+  }
+  
+  .search-container input[type="text"] {
+    width: 95%;
+    padding: 10px 40px 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    outline: none;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding-left: 12%;
+  }
+  
+  .search-container .search-icon {
+    position: absolute;
+    top: 50%;
+    left: 3%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #888;
+    pointer-events: none;
+    
+  }
+  
+  .shipping-info {
+    font-size: 16px;
+    color: #000;
+    text-align: center;
+    width: 30%;
+   //background-color: aqua;
+  }
+  
+  .nav-icons {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+   // background-color: red;
+  }
+  
+  .support-logo,
+  .user-logo,
+  .cart-logo {
+    width: 50%;
+    font-size: 25px;
+    color: #000;
+   
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .item-text{
+    font-size: 13px;
+    
+  }
+  .support-logo i,
+  .user-logo i {
+    vertical-align: middle;
+  }
+
+  .iconsWords{
+    font-size: 10px;
+   
+  }
+  
+  
+.nav-minimenu{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 90%;
+  font-size: 0.7rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.fa-clock{
+padding-right: 5px;
+}
+
+
+ 
+  @media (max-width: 768px) {
+    .nav-wrapper {
+      flex-wrap: wrap;
+      height: auto;
+      justify-content: center;
+    }
+  
+    .nav-top {
+      flex-direction: column;
+      gap: 20px;
+      justify-content: center;
+    }
+  
+    .nav-icons {
+      justify-content: center;
+    }
+  }
+

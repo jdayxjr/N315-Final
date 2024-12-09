@@ -1,0 +1,244 @@
+.coffelist-container{
+
+    width: 98%;
+  
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+   // background-color: red;
+justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+   
+}
+
+
+.coffelist-box{
+
+    width: 23%;
+    height: 600px;
+    background-color: white;
+    display: flex;
+  
+   justify-content: space-evenly;
+    flex-direction: column;
+
+    padding: 15px;
+    -webkit-box-shadow: 0px 0px 26px -9px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 0px 26px -9px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 26px -9px rgba(0,0,0,0.75);
+}
+
+.coffelist-box:hover{
+border: solid 3px black;
+  }
+  
+
+.coffeImg img{
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    
+  
+  
+}
+
+.coffeName{
+ font-size: 15px;
+
+        
+}
+
+.coffePriceBox{
+
+    width: 98%;
+    //background-color: indigo;
+    display: flex;
+  align-items: center;
+  justify-content: space-between;
+   
+}
+
+
+.price {
+    font-size: 15px;
+  color: red;
+
+font-weight: bold;
+
+  
+  }
+
+  .miniprice-box{
+    display: flex;
+    align-items: center;
+   
+    flex-direction: column;
+  }
+  .dollar-sign{
+    font-size: 14px;
+    vertical-align: super; 
+  }
+
+ 
+.price .cents {
+    font-size: 14px;
+    vertical-align: super; 
+  }
+
+  .price-two{
+    font-size: 12px;
+    text-decoration: line-through;
+    color: gray;
+  }
+  .priceText{
+    font-size: 12px;
+    color: black;
+    font-weight: bold;
+  }
+
+  .coffeHL{
+    border-bottom: 1px solid black;
+   
+  }
+
+//   .price-three{
+//     font-size: 15px;
+//     font-weight: bold;
+//   }
+
+.price-threeBox{
+  display: flex;
+align-items: center;
+  justify-content: space-between;
+  width: 90%;
+
+}
+
+.price-three {
+    font-size: 18px; 
+    font-weight: bold;
+  }
+  
+  .price-three .cents {
+    font-size: 14px;
+    vertical-align: super; 
+  }
+
+
+  .shipping-icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+   
+    
+  }
+
+  .shipping-text{
+    font-size: 15px;
+  }
+
+
+  .compareboxContainer{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 30%;
+    
+  }
+  .compare-box{
+ 
+width: 20px;
+height: 20px;
+    border:2px solid #d2d2d2;
+    background-color: white;
+  
+    
+  }
+
+  .compare-text{
+    font-size: 12px;
+    color: #007bff;
+  }
+
+
+  .buy{
+
+    width: 85%;
+    height: 40px;
+    border: solid 2px gold;
+    font-weight: bold;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    cursor: pointer;
+  }
+
+
+  .buy:hover{
+    border: solid 3px black;
+      }
+      
+
+
+
+@media (max-width: 1006px) {
+  .coffelist-container {
+      
+      //background-color: indianred;
+      gap: 30px;
+  }
+
+  .coffelist-box{
+
+    width: 30%;
+  }
+  
+}
+
+
+@media (max-width: 850px) {
+  .coffelist-container {
+      
+      //background-color: indianred;
+      gap: 40px;
+  }
+
+  .coffelist-box{
+
+    width: 35%;
+  }
+  
+}
+
+
+
+@media (max-width: 768px) {
+  .coffelist-box {
+      width: 35%; 
+      
+  }
+}
+
+
+
+@media (max-width: 650px) {
+  .coffelist-box {
+      width: 55%; 
+      //background-color: greenyellow;
+
+
+  }
+
+  .shipping-icon{
+    width: 55%;
+  }
+}
+
+

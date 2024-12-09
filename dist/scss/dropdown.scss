@@ -1,0 +1,71 @@
+
+//Carret Styling
+
+.list-Container{
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.list-items{
+    width: 79%;
+ //  background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.item1{
+    width: 15%;
+    border: 2px solid #999999;
+    height: 50px;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 15px;
+color: #2D2A26;
+
+.item1Text{
+    width: 60%;
+    
+}
+}
+
+.carret{
+    color: #999999;
+    position: absolute;
+    right: 10%;
+    font-size: 16px;
+}
+
+.sortContainer{
+    width: 17%;
+   // background-color: greenyellow;
+
+}
+
+.sort-box{
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.pop-box{
+    width: 70%;
+   // background-color: red;
+    font-weight: bold;
+    color:#2D2A26;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.popCarret{
+    font-size: 25px;
+}
